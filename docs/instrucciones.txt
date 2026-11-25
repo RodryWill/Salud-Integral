@@ -1,0 +1,69 @@
+=== SALUD INTEGRAL — PROYECTO DISEÑO WEB II ===
+
+REQUISITOS
+- PHP 8+, MySQL/MariaDB, Apache (XAMPP/WAMP).
+- Navegador moderno con soporte HTML5 video.
+
+INSTALACIÓN
+1. Copiar la carpeta salud-integral/ en htdocs.
+2. Importar sql/script.sql en phpMyAdmin.
+3. Generar hash real de contraseña:
+   php -r "echo password_hash('12345678', PASSWORD_DEFAULT);"
+   Reemplazar el hash del usuario admin en la tabla usuarios.
+4. Editar config/conexion.php con credenciales locales.
+5. Abrir http://localhost/salud-integral/
+
+CREDENCIALES
+- Admin: wmollericona@gmail.com / 12345678
+- Lector: registrarse desde registro.php
+
+FUNCIONALIDADES
+- Login/registro con AJAX + JSON.
+- Roles admin/lector con dashboards separados.
+- Catálogo dinámico de rutinas con filtros.
+- Reproductor HTML5 con temporizador y barra de progreso.
+- Guardado automático de minutos al terminar el video.
+- Gráfico semanal de minutos (CSS puro, sin librerías).
+- KPIs dinámicos (calorías, minutos, agua).
+- CRUD admin de rutinas, autores, editoriales y categorías.
+- Accesibilidad: focus-visible, aria-live, skip-link, teclado (Space, R).
+
+ESTRUCTURA
+[la de la sección 1]
+
+CHECKLIST DE ENTREGA (rúbricas)
+IU:
+[ ] Diseño limpio con paleta coherente (teal/gris).
+[ ] Navegación clara < 3 clics.
+[ ] Responsive en móvil/tablet/escritorio.
+[ ] Contraste AA, alt en imágenes, teclado.
+[ ] Estados hover/focus/active en botones.
+
+PROYECTO:
+[ ] jQuery + AJAX + JSON en login, registro, CRUD y progreso.
+[ ] PDO (POO) en todas las consultas.
+[ ] DOM manipulado dinámicamente (rutinas, tablas, gráfico).
+[ ] Sin errores en consola.
+[ ] Código comentado y nombres semánticos.
+
+
+=== PROYECTO: SALUD INTEGRAL ===
+Módulo: Diseño Web II (Frontend y Backend)
+
+--- CREDENCIALES ---
+Admin: wmollericona@gmail.com / 12345678
+
+--- TECNOLOGÍAS USADAS ---
+- Frontend: HTML5, CSS3, JavaScript (jQuery, AJAX).
+- Backend: PHP (PDO para POO).
+- Base de Datos: MySQL.
+- APIs: Consumo de API REST propia (JSON).
+
+--- FUNCIONALIDADES IMPLEMENTADAS ---
+1. Autenticación: Login y Registro con validación AJAX y contraseñas hasheadas.
+2. Navegación: Menú responsivo, buscador en la cabecera y Modo Oscuro.
+3. Roles:
+   - Admin: Dashboard con reportes (cantidad de usuarios, rutinas, minutos), gestión de noticias, testimonios y CRUDs de rutinas.
+   - Lector: Dashboard con cronómetro de ejercicio, gráfico semanal de progreso y catálogo de dietas.
+4. Accesibilidad: Etiquetas ARIA, contrastes adecuados, navegación por teclado (Espacio y 'R').
+5. Contenido: Secciones de Misión/Visión, "Cómo funciona", Testimonios públicos y Alimentación.
